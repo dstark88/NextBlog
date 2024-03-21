@@ -1,5 +1,5 @@
 import React from "react";
-import { cx } from "../utils";
+import { cx } from "@/src/utils";
 
 export const SunIcon = ({ className, ...rest }) => (
   <svg
@@ -434,6 +434,22 @@ export const DribbbleIcon = ({ className, ...rest }) => {
           <path fill="#fff" d="M0 .808h42v42H0z" />
         </clipPath>
       </defs>
+    </svg>
+  );
+};
+
+export const CompassIcon = ({ className, ...rest }) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" 
+    width={22}
+    height={23}
+    viewBox="0 0 22 23"
+    className={cx("w-full h-auto", className)}
+    {...rest}
+    >
+      <path fill="none" d="M0 0h24v24H0z" />
+      <path 
+          fill="#81B342" d="M12 10.9c-.61 0-1.1.49-1.1 1.1s.49 1.1 1.1 1.1c.61 0 1.1-.49 1.1-1.1s-.49-1.1-1.1-1.1zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm2.19 12.19L6 18l3.81-8.19L18 6l-3.81 8.19z" />
     </svg>
   );
 };
