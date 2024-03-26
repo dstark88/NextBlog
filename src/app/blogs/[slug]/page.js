@@ -129,7 +129,7 @@ export default function BlogPage({ params }) {
               <summary className="text-lg font-semibold capitalize cursor-pointer">
                 Table Of Content
               </summary>
-              {/* <ul className="mt-4 font-in text-base">
+              <ul className="mt-4 font-in text-base">
               {blog.toc.map((heading) => {
                 return (
                   <li key={`#${heading.slug}`} className="py-1">
@@ -154,7 +154,7 @@ export default function BlogPage({ params }) {
                   </li>
                 );
               })}
-            </ul> */}
+            </ul>
             </details>
           </div>
           <RenderMdx blog={blog} />
